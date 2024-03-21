@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ava Fashion</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <div class="header__logo-link">
+                            <a href="index.html" class="header__logo-img"></a>
+                        </div>
+                    </div>
+                    <div class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="index.html" class="header__navbar-link">Trang chủ</a>
+                               
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Sản phẩm</a>
+                        
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Liên hệ</a>
+                             
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <form action="" class="header-search">
+                        <input type="text" class="header-search__input" placeholder="Tìm kiếm">
+                        <button type="submit" class="header-search__button">
+                            <i class="header-search__icon"></i>
+                        </button>
+                    </form>
+                    <div class="header__cart">
+                        <a href="cart.html" class="header__cart-link">
+                            <i class="header__cart-icon"></i>
+                            <span class="header__cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-cart">
+            <section>
+                <div class="cart-content">
+                    <a href="" class="cart-content-buy">
+                        Mua thêm sản phẩm khác
+                    </a>
+                    <span>
+                        Giỏ hàng của bạn
+                    </span>
+                </div>
+                <div class="middleCart">
+                    <ul class="list-cart">
+                        <li class="product-cart-item">
+                            <div class="cart-img">
+                                <a href="">
+                                    <img src="https://cdn.tgdd.vn/Products/Images/10239/264202/dam-nu-co-tim-avafashion-ttp-hong-4-1-2-600x600.jpg"
+                                        class="product-cart-item__img" alt="">
+                                </a>
+                                <button class="product-cart-delete"><span></span> Xóa </button>
+                            </div>
+                            <div class="cart-product-info">
+                                <div class="cart-product-name">
+                                    <div class="cart-product-name__container">
+                                        <a href="">
+                                            Đầm nữ cổ tim AVAFashion TTP - Hồng
+
+                                        </a>
+                                    </div>
+                                    <span>
+                                        196.000₫
+                                        <strike>490.000₫</strike>
+                                    </span>
+                                    <hr style="width: 65%; visibility: hidden;">
+                                    <div class="cart-promo">
+                                        <span>
+                                            2 khuyến mãi
+                                        </span>
+                                    </div>
+                                    <div class="choose-color">
+                                        <div class="product-size">
+                                            <aside>
+                                                <span> Màu: <span class="color-text">Hồng</span></span>
+                                            </aside>
+                                        </div>
+                                        <div class="product-size-color">
+                                            <label class=""><span class="size-label">Size: </span><span
+                                                    class="size-text">S</span></label>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <div class="product-quantity-minus">
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <input type="text" id="quantity" class="product-number" maxlength="3"
+                                                value="1">
+                                            <div class="product-quantity-flus">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-total">
+                        <span class="cart-total-product-quantity">
+                            <span class="total-label">Tạm tính </span>
+                            (1 sản phẩm):
+                        </span>
+                        <span class="temp-total-money">196.000₫</span>
+                    </div>
+                    <div class="cart-info-customer">
+                        <h4>Thông tin khách hàng</h4>
+                        <form action="" class="form-customer">
+                            <div class="sex-customer">
+                                <span>
+                                    <input type="radio" name="">
+                                    Anh
+                                </span>
+                                <span>
+                                    <input type="radio" name="">
+                                    Chị
+                                </span>
+                            </div>
+                            <div class="fillinform">
+                                <div class="fillname">
+                                    <input placeholder="" maxlength="50" id="cusName" name="cusName" required="required"
+                                        class="capitalize untouched pristine required">
+                                    <label for="cusName" class="form-label">Họ và Tên</label>
+                                </div>
+                                <div class="fillname phoneNumber">
+                                    <input placeholder="" type="tel" maxlength="10" id="cusPhone" name="cusPhone"
+                                        required="required" class="untouched pristine required phoneNumber__input">
+                                    <label for="cusPhone" class="form-label">Số điện thoại</label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="choosegetgoods">
+                        <h4>Chọn cách thức nhận hàng</h4>
+                        <div class="click-choose">
+                            <div class="choose-link current">
+                                <input type="radio" class="cartnew-choose"></input>&nbsp;
+                                <span>Giao tận nơi</span>
+                            </div>
+                            <div class="choose-link">
+                                <input type="radio" class="cartnew-choose"></input>&nbsp; <span>Nhận
+                                    tại cửa hàng</span>
+                            </div>
+                        </div>
+                        <div class="customer-address">
+                            <input placeholder="Địa chỉ nhận hàng" maxlength="50" id="cusaddress" name="cusaddress" required="required"
+                            class="capitalize untouched pristine required">
+                        <label for="cusaddress" class="form-label">Địa chỉ nhận hàng</label>
+                        </div>
+                        <div class="finaltotal">
+                            <div class="area-total">
+                                <div class="discountcode">
+                                    <div class="usecode coupon-code singlebox">
+                                        <div class="usecode__icon"><i class="cartnew-discount"></i></div><span
+                                            class="usecode__title">Sử dụng mã giảm giá</span>
+                                    </div>
+                                
+                                    <div class="clr"></div>
+                                    <div class="applycode active"><!----><div class="applycode__text-input"><input maxlength="20" placeholder="Nhập mã giảm giá/ Phiếu mua hàng" data-dashlane-rid="87e345099078417b" data-form-type="other"></div><div class="applycode__button"><button type="button" disabled="disabled" class="disabled" data-dashlane-label="true" data-dashlane-rid="a96135991f91c06c" data-form-type="action"> Áp dụng </button></div><!----><!----><!----><!----></div>
+                                    <div class="line-break"></div>
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            
+                                <div data-tmp-total-money-in-all="196000" class="total-price"><strong>Tổng
+                                        tiền:</strong><strong>196.000₫</strong></div>
+                            </div>
+                          
+                           <button type="button" class="submitorder"><b style="text-transform:uppercase">Thanh toán khi nhận hàng</b></button>
+                                    <h3 style="text-align: center; font-weight: 500;">
+                                        Hoặc thanh toán qua 
+                                    </h3>
+                                   <!-- pay with momo -->
+                                      <div class="momo" style="display: flex; align-items: center; justify-content: center;">
+                                        <img
+                                         src="https://developers.momo.vn/v3/vi/assets/images/square-logo-f8712a4d5be38f389e6bc94c70a33bf4.png" alt=""
+                                         style="width: 100px; height: 100px; margin-top: 10px; margin-bottom: 10px; cursor: pointer;"
+                                         >
+                                         <img
+                                         src="https://vnpay.vn/s1/statics.vnpay.vn/2023/6/0oxhzjmxbksr1686814746087.png" alt=""
+                                         style="width: 100px; height: 100px; margin-top: 10px; margin-bottom: 10px; cursor: pointer;"
+                                         >
+                                         </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="commitment ">
+            <ul class="commitment-list row">
+                <li class="commitment-list-item col l-4">
+                    <div class="commitment-list-icon">
+                        <i class="commitment-icon"></i>
+
+                    </div>
+                    <div class="commitment-item-content">
+                        <p><span>Miễn phí giao hàng</span><br>Cho đơn từ 500.000đ trong 10km đầu tiên </p>
+                        <a href="/giao-hang" class="txt-link">Xem chi tiết</a>
+                    </div>
+
+                </li>
+                <li class="commitment-list-item col l-4">
+                    <div class="commitment-list-icon">
+                        <i class="commitment-icon paylinhhoat"></i>
+
+                    </div>
+                    <div class="commitment-item-content">
+                        <p><span>Thanh Toán Linh Hoạt</span><br>Qua thẻ, COD</p>
+                    </div>
+
+                </li>
+                <li class="commitment-list-item col l-4">
+                    <div class="commitment-list-icon">
+                        <i class="commitment-icon icon-doitra"></i>
+
+                    </div>
+                    <div class="commitment-item-content">
+                        <p><span>1 Đổi 1 Trong 1 Tháng</span><br>Tại 4 cửa hàng trên toàn quốc.
+                            <a href="/giao-hang" class="txt-link">Xem chi tiết</a>
+                        </p>
+
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+        <footer id="footer">
+            <section class="grid wide">
+                <div class="footer-box  row">
+                    <div class="footer-menu-tel col l-3">
+                        <h3 class="footer-title">Tổng đài</h3>
+                        <p class="footer-txt">
+                            <span>
+                                Gọi mua:
+                            </span>
+                            <a href="tel:1900866673;">1900.8666.73</a>
+                            (7:30 - 22:00)
+                        </p>
+                        <p class="footer-txt">
+                            <span>
+                                Khiếu nại:
+                            </span>
+                            <a href="tel:1900866674;">1900.8666.74</a>
+                            (8:00 - 21:00)
+                        </p>
+                        <p class="footer-link">Kết nối với chúng tôi</p>
+                        <div class="footer-social">
+                            <a href="">
+                                <i class="social-icon footer-social-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="social-icon footer-social-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-menu col l-3">
+                        <p class="footer-menu-ttl"><a class="nolink" href="#">HỆ THỐNG CỬA HÀNG</a></p>
+                        <ul class="submenu-footer">
+                            <li><a href="/cua-hang-thoi-trang">Hệ thống 4 cửa hàng</a></li>
+                            <li><a href="/noi-quy-cua-hang">Nội quy cửa hàng</a></li>
+                            <li><a href="/chat-luong-phuc-vu">Chất lượng phục vụ</a></li>
+                            <li><a href="/bao-hanh-doi-tra">Chính sách đổi trả, bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu col l-3">
+                        <p class="footer-menu-ttl"><a class="nolink" href="#">HỆ THỐNG CỬA HÀNG</a></p>
+                        <ul class="submenu-footer">
+                            <li><a href="/cua-hang-thoi-trang">Hệ thống 4 cửa hàng</a></li>
+                            <li><a href="/noi-quy-cua-hang">Nội quy cửa hàng</a></li>
+                            <li><a href="/chat-luong-phuc-vu">Chất lượng phục vụ</a></li>
+                            <li><a href="/bao-hanh-doi-tra">Chính sách đổi trả, bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu col l-3">
+                        <p class="footer-menu-ttl"><a class="nolink" href="#">HỆ THỐNG CỬA HÀNG</a></p>
+                        <ul class="submenu-footer">
+                            <li><a href="/cua-hang-thoi-trang">Hệ thống 4 cửa hàng</a></li>
+                            <li><a href="/noi-quy-cua-hang">Nội quy cửa hàng</a></li>
+                            <li><a href="/chat-luong-phuc-vu">Chất lượng phục vụ</a></li>
+                            <li><a href="/bao-hanh-doi-tra">Chính sách đổi trả, bảo hành</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link-mkt">
+                    <a href=""><i class="social-icon iconlogo-bocongthuong"></i></a>
+                    <a href="">
+                        <img class=" lazyloaded" width="150px" height="auto"
+                            src="https://tinnhiemmang.vn/handle_cert?id=avafashion.com">
+                    </a>
+                    <a href="">
+                        <i class="social-icon  iconlogo-DMCA"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày
+                    02/01/2007. <br>
+                    Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+                    cskh@avafashion.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt.
+                </p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
